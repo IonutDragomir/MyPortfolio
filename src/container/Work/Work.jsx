@@ -38,7 +38,7 @@ const Work = () => {
   return (
     <>
       <h2 className="head-text">
-        My creative <span>Portoflio</span> section
+        My creative <span>Portflio</span> section
       </h2>
 
       <div className="app__work-filter">
