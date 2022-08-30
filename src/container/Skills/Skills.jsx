@@ -3,25 +3,16 @@ import { motion } from "framer-motion";
 import ReactToolTip from "react-tooltip";
 
 import { AppWrap, MotionWrap } from "../../wrapper";
-import { urlFor, client } from "../../client";
+import  {programs, experience}  from "./skillsAndExperience";
 
 import "./Skills.scss";
 
 const Skills = () => {
-  const [experience, setExperience] = useState([]);
   const [skills, setSkills] = useState([]);
 
   useEffect(() => {
-    const query = '*[_type == "experiences"]';
-    const skillsQuery = '*[_type == "skills"]';
+    setSkills(programs);
 
-    client.fetch(query).then((data) => {
-      setExperience(data);
-    });
-
-    client.fetch(skillsQuery).then((data) => {
-      setSkills(data);
-    });
   }, []);
 
   return (
@@ -41,7 +32,7 @@ const Skills = () => {
                 className="app__flex"
                 style={{ backgroundColor: skill.bgColor }}
               >
-                <img src={urlFor(skill.icon)} alt={skill.name} />
+                <img src={skill.icon} alt={skill.name} />
               </div>
 
               <p className="p-text">{skill.name}</p>

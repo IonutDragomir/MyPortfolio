@@ -18,6 +18,9 @@ import redux from "../assets/redux.png";
 import sass from "../assets/sass.png";
 import typescript from "../assets/typescript.png";
 import vue from "../assets/vue.png";
+import elementUI from '../assets/elementUI.png'
+import quasar from '../assets/quasar.png'
+import vuex from '../assets/vuex.png'
 
 import about01 from "../assets/about01.png";
 import about02 from "../assets/about02.png";
@@ -43,6 +46,12 @@ import nb from "../assets/nb.png";
 import skype from "../assets/skype.png";
 import spotify from "../assets/spotify.png";
 
+import movieSite from "../assets/movieSite.jpg"
+import onlineStore from "../assets/onlineStore.jpg"
+import minesweeper from "../assets/minesweeper.jpg"
+import taskTracker from "../assets/taskTracker.jpg"
+import snake from "../assets/snake.jpg"
+
 export default {
   email,
   envelope,
@@ -64,6 +73,9 @@ export default {
   sass,
   typescript,
   vue,
+  vuex, 
+  elementUI,
+  quasar,
   about01,
   about02,
   about03,
@@ -84,4 +96,9 @@ export default {
   nb,
   skype,
   spotify,
+  movieSite,
+  onlineStore,
+  minesweeper,
+  taskTracker,
+  snake
 };

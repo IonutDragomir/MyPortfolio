@@ -3,17 +3,35 @@ import "./About.scss";
 
 import { AppWrap, MotionWrap } from "../../wrapper";
 import { motion } from "framer-motion";
-import { useEffect, useState } from "react";
-import { urlFor, client } from "../../client";
+import { images } from "../../constants";
 
 const About = () => {
-  const [abouts, setAbouts] = useState([]);
-
-  useEffect(() => {
-    const query = '*[_type == "abouts"]';
-
-    client.fetch(query).then((data) => setAbouts(data));
-  }, []);
+  const abouts = [
+    {
+      title: "Web Development",
+      description:
+        "I am a good web developer who is constantly learning new things to improve my skills.",
+      imgUrl: images.about01,
+    },
+    {
+      title: "React Developer",
+      description:
+        "I gained experience with the React framework while developing personal projects.",
+      imgUrl: images.about03,
+    },
+    {
+      title: "Vue Developer",
+      description:
+        "With the Vue framework I developed user-facing web applications and reusable components.",
+      imgUrl: images.about02,
+    },
+    {
+      title: "Frontend Development",
+      description:
+        "I love to create websites and add great functionality to them.",
+      imgUrl: images.about04,
+    },
+  ];
 
   return (
     <>
@@ -32,7 +50,7 @@ const About = () => {
             className="app__profile-item"
             key={about.title + index}
           >
-            <img src={urlFor(about.imgUrl)} alt={about.title} />
+            <img src={about.imgUrl} alt={about.title} />
             <h2 className="bold-text" style={{ marginTop: 20 }}>
               {about.title}
             </h2>
