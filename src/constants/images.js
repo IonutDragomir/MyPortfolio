@@ -33,6 +33,9 @@ import profile2 from "../assets/profile2.png";
 import profile3 from "../assets/profile3.png";
 import profile4 from "../assets/profile4.png";
 import profile5 from "../assets/profile5.png";
+import marina from "../assets/marina.jpg"
+import stefania from "../assets/stefania.jpg"
+import sebi from "../assets/sebi.jpg"
 
 import circle from "../assets/circle.svg";
 import logo from "../assets/logo.png";
@@ -86,6 +89,9 @@ export default {
   profile3,
   profile4,
   profile5,
+  marina,
+  stefania,
+  sebi,
   circle,
   logo,
   logoIonut,

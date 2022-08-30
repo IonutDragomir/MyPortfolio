@@ -1,55 +1,17 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { HiChevronLeft, HiChevronRight } from "react-icons/hi";
 
 import { AppWrap, MotionWrap } from "../../wrapper";
-import { urlFor, client } from "../../client";
+import { testimonials, brands } from "./testimonialsAndBrands";
 import "./Testimonial.scss";
 
 const Testimonial = () => {
-  const [brands, setBrands] = useState([]);
-  const [testimonials, setTestimonials] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
 
   function handleClick(index) {
     setCurrentIndex(index);
   }
-
-  function sortFavoriteTestimonial(feedback) {
-    let feedbackCopy = feedback;
-    let sortedFeedback = [];
-    let mostFavorite = { number: 99, object: "" };
-
-    while (feedbackCopy.length > 0) {
-      feedbackCopy.map((item) => {
-        if (item.favorite < mostFavorite.number) {
-          mostFavorite.number = item.favorite;
-          mostFavorite.object = item;
-        }
-      });
-
-      sortedFeedback.push(mostFavorite.object);
-      feedbackCopy = feedbackCopy.filter(
-        (item) => item.favorite !== mostFavorite.number
-      );
-      mostFavorite = { number: 99, object: "" };
-    }
-
-    return sortedFeedback;
-  }
-
-  useEffect(() => {
-    const query = '*[_type == "testimonials"]';
-    const brandsQuery = '*[_type == "brands"]';
-
-    client.fetch(query).then((data) => {
-      setTestimonials(sortFavoriteTestimonial(data));
-    });
-
-    client.fetch(brandsQuery).then((data) => {
-      setBrands(data);
-    });
-  }, []);
 
   const test = testimonials[currentIndex];
 
@@ -58,7 +20,7 @@ const Testimonial = () => {
       {testimonials.length && (
         <>
           <div className="app__testimonial-item app__flex">
-            <img src={urlFor(test.imgurl)} alt="testimonial" />
+            <img src={test.imgurl} alt="testimonial" />
             <div className="app__testimonial-content">
               <p className="p-text">{test.feedback}</p>
               <div>
@@ -105,7 +67,7 @@ const Testimonial = () => {
             transition={{ duration: 0.5, type: "tween" }}
             key={brand._id}
           >
-            <img src={urlFor(brand.imgUrl)} alt={brand.name} />
+            <img src={brand.imgUrl} alt={brand.name} />
           </motion.div>
         ))}
       </div>
