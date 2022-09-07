@@ -46,7 +46,7 @@ const Header = () => {
           >
             <p className="p-text">
               <a
-                href="https://docs.google.com/document/d/1bOPWMe4fshdw8K8g4LPfBrWEAAf1_0DJEU6YqEniBkM/edit"
+                href="https://drive.google.com/drive/u/0/folders/1wH6VIP7Y3MHbDbXBdTAgx9J9l7fZ787S"
                 className="p-text"
                 target="_blank"
                 rel="noreferrer"
