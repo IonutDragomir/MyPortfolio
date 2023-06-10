@@ -2,14 +2,6 @@ import { images } from "../../constants";
 
 export let projects = [
   {
-    imgUrl: images.movieSite,
-    projectLink: "https://moviesite-1.herokuapp.com/",
-    codeLink: "https://github.com/IonutDragomir/MovieSite",
-    title: "Movie site",
-    description: "A web page where you can search for movie and add them to your wish list.",
-    tags: ["React JS"],
-  },
-  {
     imgUrl: images.onlineStore,
     projectLink: "",
     codeLink: "https://github.com/IonutDragomir/OnlineStore",
