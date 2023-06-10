@@ -1,6 +1,22 @@
 import { images } from "../../constants";
 
 export let projects = [
+   {
+    imgUrl: images.massageSite,
+    projectLink: "https://spimdelaware.netlify.app/#/",
+    codeLink: "https://github.com/IonutDragomir/Massage-Site",
+    title: "Massage Site",
+    description: "A landing page for a massage parlor.",
+    tags: ["Vue JS"],
+   },
+   {
+    imgUrl: images.taskTracker,
+    projectLink: "https://vue-quasar-task-tracker.netlify.app",
+    codeLink: "https://github.com/IonutDragomir/TaskTraker",
+    title: "Task Tracker",
+    description: "A web app that can help you organize your daily tasks.",
+    tags: ["Vue JS","Vuex", "Quasar", "Web app"],
+  },
   {
     imgUrl: images.onlineStore,
     projectLink: "",
@@ -18,27 +34,11 @@ export let projects = [
     tags: ["Vanilla JS"],
   },
   {
-    imgUrl: images.taskTracker,
-    projectLink: "https://vue-quasar-task-tracker.netlify.app",
-    codeLink: "https://github.com/IonutDragomir/TaskTraker",
-    title: "Task Tracker",
-    description: "A web app that can help you organize your daily tasks.",
-    tags: ["Vue JS","Vuex", "Quasar", "Web app"],
-  },
-  {
     imgUrl: images.snake,
     projectLink: "https://ionutdragomir.github.io/snakeJS/main.html",
     codeLink: "https://github.com/IonutDragomir/Snake-Game",
     title: "Snake",
     description: "A web page where you can play the classic snake game.",
     tags: ["Vanilla JS"],
-  },
-  {
-    imgUrl: images.massageSite,
-    projectLink: "https://spimdelaware.netlify.app/#/",
-    codeLink: "https://github.com/IonutDragomir/Massage-Site",
-    title: "Massage Site",
-    description: "A landing page for a massage parlor.",
-    tags: ["Vue JS"],
-  },
+  }
 ];
