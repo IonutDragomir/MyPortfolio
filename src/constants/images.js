@@ -55,6 +55,8 @@ import minesweeper from "../assets/minesweeper.jpg"
 import taskTracker from "../assets/taskTracker.jpg"
 import snake from "../assets/snake.jpg"
 import massageSite from "../assets/massageSite.png"
+import onlineStore2 from "../assets/onlineStore.png"
+
 
 export default {
   email,
@@ -105,6 +107,7 @@ export default {
   spotify,
   movieSite,
   onlineStore,
+  onlineStore2,
   minesweeper,
   taskTracker,
   snake,
