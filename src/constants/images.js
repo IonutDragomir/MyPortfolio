@@ -50,12 +50,11 @@ import skype from "../assets/skype.png";
 import spotify from "../assets/spotify.png";
 
 import movieSite from "../assets/movieSite.jpg"
-import onlineStore from "../assets/onlineStore.jpg"
 import minesweeper from "../assets/minesweeper.jpg"
 import taskTracker from "../assets/taskTracker.jpg"
 import snake from "../assets/snake.jpg"
 import massageSite from "../assets/massageSite.png"
-import onlineStore2 from "../assets/onlineStore.png"
+import onlineStore from "../assets/onlineStore.png"
 
 
 export default {
@@ -107,7 +106,6 @@ export default {
   spotify,
   movieSite,
   onlineStore,
-  onlineStore2,
   minesweeper,
   taskTracker,
   snake,
