@@ -41,4 +41,12 @@ export let projects = [
     description: "A web page where you can play the classic snake game.",
     tags: ["Vanilla JS"],
   },
+  {
+    imgUrl: images.massageSite,
+    projectLink: "https://spimdelaware.netlify.app/#/",
+    codeLink: "https://github.com/IonutDragomir/Massage-Site",
+    title: "Massage Site",
+    description: "A landing page for a massage parlor.",
+    tags: ["Vue JS"],
+  },
 ];
