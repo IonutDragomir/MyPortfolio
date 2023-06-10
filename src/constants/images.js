@@ -51,7 +51,7 @@ import spotify from "../assets/spotify.png";
 
 import movieSite from "../assets/movieSite.jpg"
 import minesweeper from "../assets/minesweeper.jpg"
-import taskTracker from "../assets/taskTracker.jpg"
+import taskTracker from "../assets/taskTracker.png"
 import snake from "../assets/snake.jpg"
 import massageSite from "../assets/massageSite.png"
 import onlineStore from "../assets/onlineStore.png"
