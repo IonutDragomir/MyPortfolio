@@ -2,7 +2,7 @@ import { images } from "../../constants";
 
 export let projects = [
   {
-    imgUrl: images.onlineStore,
+    imgUrl: images.onlineStore2,
     projectLink: "",
     codeLink: "https://github.com/IonutDragomir/OnlineStore",
     title: "Online Store",
