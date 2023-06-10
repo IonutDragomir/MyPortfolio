@@ -7,7 +7,9 @@ export const experience = [
       {
         name: "Frontend Developer",
         company: "Ikon Soft",
-        desc: " I create new reusable components, I implemented a new feature that helped the test team to better explain the errors they encountered.",
+        desc1: "Responsible for creating visually appealing layouts and intuitive user interfaces for data-driven web applications using HTML, CSS, JavaScript, Vue, Bootstrap, and Element UI.",
+        desc2: "Design and develop robust front-end solutions that meet clients' needs.",
+        desc3: "Work with data using Chart.js to represent data in a visually compelling manner, making it easier for users to understand and derive insights.",
       },
     ],
   },
