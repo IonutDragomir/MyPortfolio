@@ -54,7 +54,7 @@ import onlineStore from "../assets/onlineStore.jpg"
 import minesweeper from "../assets/minesweeper.jpg"
 import taskTracker from "../assets/taskTracker.jpg"
 import snake from "../assets/snake.jpg"
-import massageSite from "../assets/massageSite.jpg"
+import massageSite from "../assets/massageSite.png"
 
 export default {
   email,
